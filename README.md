@@ -1,1 +1,2 @@
 # JavaScript
+Décrassage JS.
