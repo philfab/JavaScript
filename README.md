@@ -1,2 +1,2 @@
 # JavaScript
-Décrassage JS.
+Premier Exercice JS (TODO).
