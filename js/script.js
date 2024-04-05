@@ -3,8 +3,7 @@ const taskCard = document.querySelector('.todoCard');
 const taskContainer = document.querySelector('#todoCards');
 const delBtn = document.querySelector('.delBtn');
 const compteur = document.querySelector('.compteur');
-let count = 1;
-majCompteur(count);
+majCompteur();
 
 
 addBtn.addEventListener('click', addTask);
@@ -23,17 +22,17 @@ function addTask() {
     newDelBtn.addEventListener('click', function () {
         delTask(newTask);
     })
-    majCompteur(++count);
+    majCompteur();
 }
 
 //supprimer une card
 function delTask(task) {
     task.remove();
-    majCompteur(--count);
+    majCompteur();
 }
 
-function majCompteur(count) {
-    compteur.innerHTML = count;
+function majCompteur() {
+    compteur.innerText = taskContainer.children.length;
 }
 
 
